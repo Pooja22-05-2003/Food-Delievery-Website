@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Food Delivery| OnlineMeals.com</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:850px)" href="css/phone.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
       rel="stylesheet"
@@ -26,7 +27,7 @@
     <section id="home">
       <h1 class="h-primary">First Class Food</h1>
       <p>
-        Welcome to the delecious online food delievery platform.Here is
+        Welcome to the delecious online food delievery platform. Here is
         
         everything that you want to eat .So,What are you waiting for,Just Go and order your food at your comfort
         price.
@@ -113,12 +114,41 @@
       <form action="">
         <div class="form-group">
           <label for="name">Name:</label>
-          <input type="text" name="name" id="name"
-          placeholder="Enter your name">
+          <textarea name="name" id="name" cols="20" rows="01" placeholder="Enter your name here "></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email: </label>
+          <textarea name="email" id="email" cols="20" rows="01" placeholder="Enter your email id "></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          
+          <!-- <input type="phone" name="name" id="name" -->
+          <textarea name="phone" id="phone" cols="20" rows="01" placeholder="Enter your phone number "></textarea>
+        
+        </div>
+       
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message "></textarea>
+          
+        </div>
+
+        <div class="form-group">
+          <label for="sublit">Submit: </label>
+          <button class="btn"> You want to submit? </button>
+          
         </div>
         <form>
       
       </div>
     </section>
+    <footer>
+      <div class="center">
+        Copyright &copy;www.FirstClassFood.com.All rights reserved!
+      </div>
+    </footer>
   </body>
 </html>
