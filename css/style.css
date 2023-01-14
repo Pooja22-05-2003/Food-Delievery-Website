@@ -1,0 +1,228 @@
+/* CSS Reset*/
+
+*{
+    margin: -1;
+    padding: -12;
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+
+/* CSS Variables*/
+:root{
+    --navbar-height:59px;
+}
+
+/*  Navigation Bar */
+#navbar{ 
+    display: flex;
+    align-items: center; 
+    
+    /* position: sticky;
+    top: 0px; */
+    
+   
+    /*justify-content: center; */
+}
+
+#navbar ::before{
+    content: "";
+    background-color:rgb(128, 128, 128);
+    position: absolute;
+    
+    top:0px;
+    left:0px;
+    margin: 0px;
+    
+    height: 10%;
+    width: 150%;
+    z-index:-1;
+    /* opacity: 0.4; */
+}
+
+/* Navigation Bar : Logo and Image */
+#logo{
+    /* height:2px; */
+    margin:10px 34px;
+    
+}
+/* #logo img{
+
+} */
+#logo img {
+    /* padding:15px;
+    width: 100px; */
+    height: 59px;
+    margin:3px 6px;
+    
+}
+
+/* Navigation Bar : List Styling */
+
+
+#navbar ul{
+    display: flex;
+    font-family:initial;
+    /* margin:0px px; */
+    /* font-family: 'Baloo Bhai',cursive; */
+}
+
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size:1.3rem ;
+}
+
+#navbar ul li a{
+    color:rgb(10, 10, 10); 
+    font-size: larger;
+    font-weight: bold;
+    font-size: xx-large;
+   display: block;
+
+   padding: 3px 22px;
+   border-radius: 0px;
+   text-decoration: none;
+   background:url('../whitebackground.png')no-repeat center center/cover;
+   border-radius:23px;
+}
+
+#navbar ul li a:hover{
+   color: black; 
+   background-color: white;
+   border-radius: 23px;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    font-size: xx-large;
+    flex-direction: column;
+    height:520px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../img4.jpeg')no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    
+    height: 70%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: rgb(25, 24, 24);
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Bree Serif',serif;
+    background:url('../img7.jpeg')no-repeat center center/cover;
+    
+    border-radius: 23px;
+
+}
+#home p{
+    color:rgb(15, 14, 14);
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.5rem;
+    background:url('../img7.jpeg')no-repeat center center/cover;
+    
+    /* font-family:serif; */
+    font-family: 'Bree Serif',serif;
+    border-radius: 23px;
+   
+}
+
+/*Services Section  */
+
+#services{
+    margin: 34px;
+    display:flex;
+}
+#services .box{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 3px;
+    border-radius: 23px;
+    background-color:rgba(191, 189, 188, 0.199);
+}
+
+#services .box img{
+    border:2px solid brown;
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+
+    font-family: 'Bree Serif',serif;
+}
+
+/* Client Section */
+#client-section{
+   height:344px;
+
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img1.jpg')no-repeat center center/cover;
+    padding: 200px;
+    width: 80%;
+    height:0%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img {
+   height: 154px;
+}
+.client-item{
+    padding: 60px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    font-weight: bolder;
+    padding: 12px ;
+    /* color: rgb(26, 26, 18); */
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    /* font-weight: bolder; */
+    padding: 12px ;
+    /* color: rgb(16, 16, 14); */
+}
+
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: rgb(225, 44, 20);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin: 17px;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}
+
+
